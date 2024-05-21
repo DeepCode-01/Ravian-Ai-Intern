@@ -87,70 +87,35 @@ const Navbar = () => {
                   About
                 </Link>
               </li>
-              <li>
-                <div className="relative">
-                  <button
-                    onMouseEnter={() => setIsDropdownOpen(true)}
-                    onMouseLeave={() => setIsDropdownOpen(false)}
-                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                  >
-                    Courses
-                    <FaAngleDown
-                      className={`inline-block w-4 h-4 ml-1  text-gray-500 dark:text-gray-400 ${
-                        isDropdownOpen
-                          ? "transform rotate-180 transition-all duration-150"
-                          : ""
-                      }`}
-                    />
-                  </button>
 
-                  {isDropdownOpen && (
-                    <div
-                      onMouseEnter={() => setIsDropdownOpen(true)}
-                      onMouseLeave={() => setIsDropdownOpen(false)}
-                      className="z-50 absolute md:left-1/2 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
-                    >
-                      <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
-                        <li>
-                          <Link
-                            href="/"
-                            onClick={() => setIsOpen(false)}
-                            className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                          >
-                          Deepali 3
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/"
-                            onClick={() => setIsOpen(false)}
-                            className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                          >
-                           Deepali 4
-                          </Link>
-                        </li>
-                      </ul>
-                      <div className="py-1">
-                        <Link
-                          href="/"
-                          onClick={() => setIsOpen(false)}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                        >
-                          Deepali 5
-                        </Link>
-                      </div>
-                    </div>
-                  )}
-                </div>
+              <li>
+                <Link
+                  href="/vision"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2  text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 md:dark:hover:text-gray-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Vision
+                </Link>
+              </li>
+             
+
+              <li>
+                <Link
+                  href="/offerings"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2  text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 md:dark:hover:text-gray-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                 Offerings
+                </Link>
               </li>
 
               <li>
                 <Link
-                  href="/"
+                  href="/contact"
                   onClick={() => setIsOpen(false)}
                   className="block py-2  text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-500 md:p-0 md:dark:hover:text-gray-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
-                  Deepali 6
+                  Contact
                 </Link>
               </li>
             </ul>
