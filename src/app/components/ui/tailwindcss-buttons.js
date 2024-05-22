@@ -1,7 +1,7 @@
-"use client"
-import React from "react"
-import { IconClipboard } from "@tabler/icons-react"
-import { cn } from "@/utils/cn"
+"use client";
+import React from "react";
+import { IconClipboard } from "@tabler/icons-react";
+import { cn } from "@/utils/cn";
 
 export const ButtonsCard = ({ children, className, onClick }) => {
   return (
@@ -16,5 +16,5 @@ export const ButtonsCard = ({ children, className, onClick }) => {
       <IconClipboard className="absolute top-2 right-2 text-neutral-300 group-hover/btn:block hidden h-4 w-4 transition duration-200" />
       <div className="relative z-40">{children}</div>
     </div>
-  )
-}
+  );
+};

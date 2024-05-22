@@ -9,7 +9,6 @@ import { ModeToggle } from "./Mode";
 
 import { BrowserRouter as Router } from "react-router-dom";
 
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -32,44 +31,43 @@ const Navbar = () => {
   }, []);
 
   return (
-
     <>
-    <Router>
-      <nav
-        className={`bg-white dark:bg-black z-[100]  start-0 border-b border-gray-200 dark:border-gray-700 shadow md:inset-x-0 md:border-t ${
-          isSticky
-            ? "sticky top-0 md:translate-y-3 md:w-3/4 lg:w-4/5 mx-auto md:rounded-3xl md:shadow-md z-[100] transition-all duration-300"
-            : "w-full z-[100] "
-        }`}
-      >
-        <div className="max-w-screen-xl p-5 flex flex-wrap items-center justify-between mx-auto px-3">
-          <Link
-            href="#"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
-            onClick={() => setIsOpen(false)}
-          >
-            <span className="text-black pl-3 font-bold text-2xl dark:text-white cursor-pointer">
-              {" "}
-              RAVIAN AI
-            </span>
-          </Link>
-          <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <div className="mx-2">
-              <ModeToggle />
-            </div>
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden bg-gray-100 dark:bg-gray-800 outline-none ring-2 ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:ring-gray-600"
+      <Router>
+        <nav
+          className={`bg-white dark:bg-black z-[100]  start-0 border-b border-gray-200 dark:border-gray-700 shadow md:inset-x-0 md:border-t ${
+            isSticky
+              ? "sticky top-0 md:translate-y-3 md:w-3/4 lg:w-4/5 mx-auto md:rounded-3xl md:shadow-md z-[100] transition-all duration-300"
+              : "w-full z-[100] "
+          }`}
+        >
+          <div className="max-w-screen-xl p-5 flex flex-wrap items-center justify-between mx-auto px-3">
+            <Link
+              href="#"
+              className="flex items-center space-x-3 rtl:space-x-reverse"
+              onClick={() => setIsOpen(false)}
             >
-              {isOpen ? (
-                <CgClose className="w-6 h-6" />
-              ) : (
-                <RiMenu3Fill className="w-6 h-6" />
-              )}
-            </button>
-          </div>
-          
+              <span className="text-black pl-3 font-bold text-2xl dark:text-white cursor-pointer">
+                {" "}
+                RAVIAN AI
+              </span>
+            </Link>
+            <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+              <div className="mx-2">
+                <ModeToggle />
+              </div>
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                type="button"
+                className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden bg-gray-100 dark:bg-gray-800 outline-none ring-2 ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:ring-gray-600"
+              >
+                {isOpen ? (
+                  <CgClose className="w-6 h-6" />
+                ) : (
+                  <RiMenu3Fill className="w-6 h-6" />
+                )}
+              </button>
+            </div>
+
             <div
               className={`${
                 isOpen ? "block" : "hidden"
@@ -130,9 +128,8 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-        
-        </div>
-      </nav>
+          </div>
+        </nav>
       </Router>
     </>
   );

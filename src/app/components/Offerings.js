@@ -2,9 +2,6 @@
 import { LockOpen, Tv2 } from "lucide-react";
 import { useState, useEffect } from "react";
 
-
-
-
 const Data = [
   {
     title: "AI Data Analyst",
@@ -40,20 +37,24 @@ const Offerings = () => {
   }, []);
 
   return (
-    <div className="py-12" id="offerings" >
+    <div className="py-12" id="offerings">
       <div className="container mx-auto">
-      <h1 className="text-2xl pb-4 sm:text-3xl md:text-4xl my-8 lg:text-5xl font-bold text-center text-black dark:text-white" >
-        Our Offerings
-      </h1>
+        <h1 className="text-2xl pb-4 sm:text-3xl md:text-4xl my-8 lg:text-5xl font-bold text-center text-black dark:text-white">
+          Our Offerings
+        </h1>
 
         <div className="mt-12 w-full flex items-center justify-center">
-          <ul className="grid md:grid-cols-2  gap-8 grid-cols-1 "  data-aos="fade-up">
+          <ul
+            className="grid md:grid-cols-2  gap-8 grid-cols-1 "
+            data-aos="fade-up"
+          >
             {Data.map((item, index) => (
               <li
                 key={index}
                 className="w-[350px] max-w-full relative rounded-2xl flex-shrink-0 px-8 py-6 md:w-[450px] border-4 dark:border-2"
                 style={{
-                  background: "linear-gradient(90deg, #1f2937 0%, #111827 100%)",
+                  background:
+                    "linear-gradient(90deg, #1f2937 0%, #111827 100%)",
                   boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
                   borderColor: color,
                 }}

@@ -3,7 +3,10 @@ import React from "react";
 const Contact = () => {
   return (
     <>
-      <h1 className="text-2xl sm:text-3xl md:text-4xl my-8 lg:text-5xl font-bold text-center text-black dark:text-white" data-aos="fade-up">
+      <h1
+        className="text-2xl sm:text-3xl md:text-4xl my-8 lg:text-5xl font-bold text-center text-black dark:text-white"
+        data-aos="fade-up"
+      >
         Get In Touch
       </h1>
       <section className="py-28 relative" id="contact">

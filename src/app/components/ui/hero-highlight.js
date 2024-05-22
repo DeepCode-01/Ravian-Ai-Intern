@@ -1,19 +1,19 @@
-"use client"
+"use client";
 
-import { cn } from "../utils/cn"
-import { useMotionValue, motion, useMotionTemplate } from "framer-motion"
-import React from "react"
+import { cn } from "../utils/cn";
+import { useMotionValue, motion, useMotionTemplate } from "framer-motion";
+import React from "react";
 
 export const HeroHighlight = ({ children, className, containerClassName }) => {
-  let mouseX = useMotionValue(0)
-  let mouseY = useMotionValue(0)
+  let mouseX = useMotionValue(0);
+  let mouseY = useMotionValue(0);
 
   function handleMouseMove({ currentTarget, clientX, clientY }) {
-    if (!currentTarget) return
-    let { left, top } = currentTarget.getBoundingClientRect()
+    if (!currentTarget) return;
+    let { left, top } = currentTarget.getBoundingClientRect();
 
-    mouseX.set(clientX - left)
-    mouseY.set(clientY - top)
+    mouseX.set(clientX - left);
+    mouseY.set(clientY - top);
   }
   return (
     <div
@@ -40,33 +40,33 @@ export const HeroHighlight = ({ children, className, containerClassName }) => {
               black 0%,
               transparent 100%
             )
-          `
+          `,
         }}
       />
 
       <div className={cn("relative z-20", className)}>{children}</div>
     </div>
-  )
-}
+  );
+};
 
 export const Highlight = ({ children, className }) => {
   return (
     <motion.span
       initial={{
-        backgroundSize: "0% 100%"
+        backgroundSize: "0% 100%",
       }}
       animate={{
-        backgroundSize: "100% 100%"
+        backgroundSize: "100% 100%",
       }}
       transition={{
         duration: 2,
         ease: "linear",
-        delay: 0.5
+        delay: 0.5,
       }}
       style={{
         backgroundRepeat: "no-repeat",
         backgroundPosition: "left center",
-        display: "inline"
+        display: "inline",
       }}
       className={cn(
         `relative inline-block pb-1   px-1 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500`,
@@ -75,5 +75,5 @@ export const Highlight = ({ children, className }) => {
     >
       {children}
     </motion.span>
-  )
-}
+  );
+};

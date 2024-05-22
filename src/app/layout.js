@@ -3,10 +3,6 @@ import "./globals.css";
 import { ThemeProvider } from "@/Provider";
 import Navbar from "./components/Navbar";
 
-
-
-
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -19,9 +15,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system">
-        <Navbar/>
-          {children}</ThemeProvider>
-        </body>
+          <Navbar />
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
