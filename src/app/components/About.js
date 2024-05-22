@@ -4,7 +4,7 @@ import Ravian from "../Assets/data analytics.png";
 const About = () => {
   return (
     <div
-      className="text-[#03989e] dark:text-[#00c2cb] w-full flex flex-col mt-4 items-center justify-center gap-2 md:gap-4 p-5 "
+      className="text-[#03989e] dark:text-[#00c2cb] w-full flex flex-col mt-4 items-center justify-center gap-2 md:gap-4 p-5 overflow-hidden "
       id="about"
     >
       <h1 className="text-2xl sm:text-3xl md:text-4xl my-8 lg:text-5xl font-bold text-center text-black dark:text-white">
