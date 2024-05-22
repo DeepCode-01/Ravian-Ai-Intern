@@ -4,8 +4,8 @@ import Ravian from "../Assets/data analytics.png"
 
 const About = () => {
   return (
-    <div className="text-[#03989e] dark:text-[#00c2cb] w-full flex flex-col mt-4 items-center justify-center gap-2 md:gap-4 p-5 ">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl my-8 lg:text-5xl font-bold text-center text-black dark:text-white">
+    <div className="text-[#03989e] dark:text-[#00c2cb] w-full flex flex-col mt-4 items-center justify-center gap-2 md:gap-4 p-5 " id="about">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl my-8 lg:text-5xl font-bold text-center text-black dark:text-white" >
         About Us
       </h1>
       <section className="mb-20">
@@ -18,11 +18,11 @@ const About = () => {
                 src={Ravian}
                 alt="Ravian ai"
                 placeholder="blur"
-                className="w-full rounded-xl shadow-xl dark:shadow-black/20 lg:ml-[50px] z-[10] bg-gray-300 dark:bg-gray-800"
+                className="w-full rounded-xl shadow-xl dark:shadow-black/20 lg:ml-[50px] z-[10] bg-gray-300 dark:bg-gray-800" data-aos="fade-right"
               />
             </div>
           </div>
-          <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+          <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12" data-aos="fade-left">
             <div className="flex h-full items-center rounded-xl bg-gray-300 shadow-2xl dark:bg-gray-800 p-6 text-center  lg:pl-12 lg:text-left">
               <div className="lg:pl-12">
                 <h2 className="mb-2 text-2xl font-bold bg-clip-text text-center my-2 text-transparent bg-gradient-to-r  from-[#00c2cb] to-green-600  dark:from-indigo-500 dark:to-purple-500">

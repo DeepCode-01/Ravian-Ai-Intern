@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 
 
+
 const Data = [
   {
     title: "AI Data Analyst",
@@ -39,14 +40,14 @@ const Offerings = () => {
   }, []);
 
   return (
-    <div className="py-12">
+    <div className="py-12" id="offerings" >
       <div className="container mx-auto">
-        <h1 className="text-4xl my-4 font-semibold text-black dark:text-white mb-6 uppercase text-center ">
-          Our Offerings
-        </h1>
+      <h1 className="text-2xl pb-4 sm:text-3xl md:text-4xl my-8 lg:text-5xl font-bold text-center text-black dark:text-white" >
+        Our Offerings
+      </h1>
 
         <div className="mt-12 w-full flex items-center justify-center">
-          <ul className="grid md:grid-cols-2  gap-8 grid-cols-1 ">
+          <ul className="grid md:grid-cols-2  gap-8 grid-cols-1 "  data-aos="fade-up">
             {Data.map((item, index) => (
               <li
                 key={index}
