@@ -7,7 +7,7 @@ import { CgClose } from "react-icons/cg";
 import Link from "next/link";
 import { ModeToggle } from "./Mode";
 
-import { BrowserRouter as Router } from "react-router-dom";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <>
-      <Router>
+ 
         <nav
           className={`bg-white dark:bg-black z-[100]  start-0 border-b border-gray-200 dark:border-gray-700 shadow md:inset-x-0 md:border-t ${
             isSticky
@@ -130,7 +130,7 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
-      </Router>
+   
     </>
   );
 };
