@@ -44,7 +44,7 @@ const Navbar = () => {
             className="flex items-center space-x-3 rtl:space-x-reverse"
             onClick={() => setIsOpen(false)}
           >
-           <span className="text-black font-bold text-xl dark:text-white cursor-pointer"> RAVIAN AI</span>
+           <span className="text-black font-bold text-2xl dark:text-white cursor-pointer"> RAVIAN AI</span>
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             
@@ -68,7 +68,7 @@ const Navbar = () => {
               isOpen ? "block" : "hidden"
             } items-center justify-between  w-full md:flex md:w-auto md:order-1 bg-gray-50 dark:bg-gray-800 md:bg-white md:dark:bg-black`}
           >
-            <ul className="flex flex-col items-start p-4 md:p-0 mt-4 font-medium border border-gray-100  rounded-lg bg-gray-50  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-black dark:border-gray-700">
+            <ul className="flex text-lg flex-col items-start p-4 md:p-0 mt-4 font-medium border border-gray-100  rounded-lg bg-gray-50  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-black dark:border-gray-700">
               <li>
                 <Link
                   href="/"
