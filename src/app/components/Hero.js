@@ -6,6 +6,7 @@ import About from "./About";
 
 import Vision from "./Vision";
 import Footer from "./Footer";
+import Contact  from "./Contact"
 
 export function Hero() {
   return (
@@ -38,6 +39,8 @@ export function Hero() {
       <About/>
 
       <Vision/>
+
+      <Contact/>
 
       <Footer/>
 
